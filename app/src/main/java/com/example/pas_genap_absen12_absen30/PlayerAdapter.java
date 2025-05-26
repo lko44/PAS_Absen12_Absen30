@@ -32,7 +32,7 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.PlayerView
     @Override
     public void onBindViewHolder(@NonNull PlayerViewHolder holder, int position) {
         Player player = playerList.get(position);
-        holder.tvNamaTim.setText(player.strPlayer);
+        holder.tvNameTeam.setText(player.strPlayer);
         holder.tvStadium.setText(player.strSport);
 
         Glide.with(holder.itemView.getContext())
@@ -46,12 +46,12 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.PlayerView
     }
 
     static class PlayerViewHolder extends RecyclerView.ViewHolder {
-        TextView tvNamaTim, tvStadium;
+        TextView tvNameTeam, tvStadium;
         ImageView imgBadge;
 
         public PlayerViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNamaTim = itemView.findViewById(R.id.tvNamaTim);
+            tvNameTeam = itemView.findViewById(R.id.tvNameTeam);
             tvStadium = itemView.findViewById(R.id.tvStadium);
             imgBadge = itemView.findViewById(R.id.imgBadge);
         }

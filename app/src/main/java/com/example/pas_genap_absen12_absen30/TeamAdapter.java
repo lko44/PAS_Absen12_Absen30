@@ -51,7 +51,7 @@ public class TeamAdapter  extends RecyclerView.Adapter<TeamAdapter.TeamViewHolde
 
         public TeamViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNamaTim = itemView.findViewById(R.id.tvNamaTim);
+            tvNamaTim = itemView.findViewById(R.id.tvNameTeam);
             tvStadium = itemView.findViewById(R.id.tvStadium);
             imgBadge = itemView.findViewById(R.id.imgBadge);
 
